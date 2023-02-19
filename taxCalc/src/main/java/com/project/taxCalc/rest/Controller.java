@@ -28,23 +28,7 @@ import com.project.taxCalc.entity.EmployeeWithTaxDeduction;
 public class Controller {
 
 	public ArrayList<Employee> empList = new ArrayList<Employee>();
-
-	// public static void main(String[] args) {
-	// Controller controller = new Controller();
-	// Employee employee = new Employee();
-	// employee.setEmployeeID(1);
-	// employee.setFirstName("sdsad");
-	// employee.setLastName("asdas");
-	// employee.setEmail("adsad@gmail.com");
-	// employee.setPhoneNumber("7853931756");
-	// employee.setDoj(LocalDate.now());
-	// employee.setSalary(70000);
-	// // Employee employee = new Employee(1, "susant", "kumar",
-	// // "VickyGupta@gmail.com", "7853931756", "Mon May 16 05:30:00 IST 2022",
-	// // 800000);
-	// controller.empList.add(0, employee);
-	// }
-
+	
 	@GetMapping("ping")
 	public ResponseEntity<?> ping() {
 		return ResponseEntity.ok().body("working");
